@@ -76,12 +76,21 @@ h1 {
 
 
 /* MIN-WIDTH OF THE PAGE SHOULD NOT GO BELOW 400PX */
+body {
+    min-width: 400px;
+}
 
 /* ADD A DIV WITH THE CLASS OF CONTAINER TO EVERY CONTENT CONTAINER THIS IS ALLOW THE BASE ELEMENTS TO BE 100% WIDTH, BUT CONSTRAIN THE ACTUAL CONTENT TO 90% */
 .container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
+    
+}
+
+#services div {
+    display: inline-block;
+    background-color: var(--blue);
 }
 
 /* ADD TO "INNOVATION & INVESTMENT SECTION (Photo by Kevin Matos on Unsplash) */
@@ -98,7 +107,6 @@ h1 {
 /* ADD FLOATING SVG LOGO BEFORE THE H1 */
  h1::before {
     content: "";
-
     left:-.5rem;
     width: 3.75rem;
     height: 3.75rem;
@@ -124,7 +132,7 @@ h1 {
     background: var(--charcoal);
     border-radius: 10px;
     position: relative;
-    transition: ;
+    transition: translate(50%);
     height: 0;
 }
 /* THIS ONE IS DONE FOR YOU */
