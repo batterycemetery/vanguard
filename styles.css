@@ -64,6 +64,10 @@ table {
 }
 
 /* GLOBAL STYLES (MOBILE FIRST (SMALL) */
+body {
+    min-width: 400px;
+}
+
 header {
     background-color: var(--black);
 }
@@ -76,9 +80,6 @@ h1 {
 
 
 /* MIN-WIDTH OF THE PAGE SHOULD NOT GO BELOW 400PX */
-body {
-    min-width: 400px;
-}
 
 /* ADD A DIV WITH THE CLASS OF CONTAINER TO EVERY CONTENT CONTAINER THIS IS ALLOW THE BASE ELEMENTS TO BE 100% WIDTH, BUT CONSTRAIN THE ACTUAL CONTENT TO 90% */
 .container {
@@ -89,7 +90,7 @@ body {
 }
 
 #services div {
-    display: inline-block;
+    display: grid;
     background-color: var(--blue);
 }
 
